@@ -10,7 +10,8 @@
       "projectType": "application",
       "schematics": {
         "@ngneat/spectator:spectator-component": {
-          "style": "scss"
+          "style": "scss",
+          "export": true
         }
       },
       "root": "",

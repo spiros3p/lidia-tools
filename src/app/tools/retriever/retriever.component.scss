@@ -1,0 +1,26 @@
+.center-everything {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  padding: 15px 5px;
+}
+
+.custom-container {
+  padding: 20px;
+  background-color: aliceblue;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 10px;
+  min-height: 380px;
+  // min-width: 350px;
+  width: 100%;
+}
+
+.data-list {
+  list-style: none;
+  background-color: white;
+  min-height: 100px;
+  border-radius: 10px;
+  max-height: 500px;
+  overflow: scroll;
+}
