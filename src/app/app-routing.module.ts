@@ -3,11 +3,11 @@ import { RouterModule, Routes } from "@angular/router";
 import { RetrieverComponent } from "./tools/retriever/retriever.component";
 
 const routes: Routes = [
-  // {
-  //   path: "",
-  //   redirectTo: "/retriever",
-  //   pathMatch: "full",
-  // },
+  {
+    path: "",
+    redirectTo: "/retriever",
+    pathMatch: "full",
+  },
   { path: "retriever", component: RetrieverComponent },
 ];
 
