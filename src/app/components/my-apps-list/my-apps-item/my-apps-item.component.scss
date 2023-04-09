@@ -1,0 +1,22 @@
+a {
+  text-decoration: none;
+}
+
+.custom-card {
+  width: 100%;
+  min-height: 80px;
+  background-color: rgb(247, 251, 255);
+  padding: 12px;
+  color: black;
+
+  .card-title {
+    text-transform: capitalize;
+    font-size: 19px;
+  }
+
+  .card-text {
+    color: rgb(84, 84, 84);
+    font-size: 11px;
+    font-style: italic;
+  }
+}
