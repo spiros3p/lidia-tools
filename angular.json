@@ -1,14 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "schematicCollections": [
-      "@angular-eslint/schematics"
-    ]
+    "schematicCollections": ["@ngneat/spectator"]
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-template-jest-spectator-playwright": {
+    "lidias-tools": {
       "projectType": "application",
       "schematics": {
         "@ngneat/spectator:spectator-component": {
@@ -29,13 +27,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -75,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-template-jest-spectator-playwright:build:production"
+              "browserTarget": "lidias-tools:build:production"
             },
             "development": {
-              "browserTarget": "angular-template-jest-spectator-playwright:build:development"
+              "browserTarget": "lidias-tools:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -86,16 +79,13 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-template-jest-spectator-playwright:build"
+            "browserTarget": "lidias-tools:build"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         }
       }

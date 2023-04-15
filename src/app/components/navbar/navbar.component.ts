@@ -7,5 +7,5 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
-	isMenuCollapsed = true;
+  isMenuCollapsed = true;
 }

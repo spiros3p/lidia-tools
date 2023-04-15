@@ -4,19 +4,9 @@ import { NavbarComponent } from './navbar.component';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterLink } from '@angular/router';
 
-
-
 @NgModule({
-  declarations: [
-    NavbarComponent
-  ],
-  imports: [
-    CommonModule,
-    NgbCollapseModule,
-    RouterLink
-  ],
-  exports: [
-    NavbarComponent
-  ]
+  declarations: [NavbarComponent],
+  imports: [CommonModule, NgbCollapseModule, RouterLink],
+  exports: [NavbarComponent],
 })
-export class NavbarModule { }
+export class NavbarModule {}

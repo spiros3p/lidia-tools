@@ -1,11 +1,11 @@
-import { Component, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
-import { myRoutes } from "src/app/app-routing.module";
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { myRoutes } from 'src/app/app-routing.module';
 
 @Component({
-  selector: "app-my-apps-list",
-  templateUrl: "./my-apps-list.component.html",
-  styleUrls: ["./my-apps-list.component.scss"],
+  selector: 'app-my-apps-list',
+  templateUrl: './my-apps-list.component.html',
+  styleUrls: ['./my-apps-list.component.scss'],
 })
 export class MyAppsListComponent implements OnInit {
   apps: any[] = [];
@@ -17,6 +17,5 @@ export class MyAppsListComponent implements OnInit {
       path: route.path,
       description: route.description,
     }));
-    console.log(this.apps);
   }
 }

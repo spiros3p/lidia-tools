@@ -1,0 +1,7 @@
+<h2 class="mb-4 page-title">
+  <button *ngIf="pageTitle" class="btn btn-outline-dark me-4" [routerLink]="['/']">
+    <fa-icon [icon]="faArrowLeft"></fa-icon>
+    <span class="ms-1">Back</span>
+  </button>
+  <span class="title">{{ pageTitle || homePage }}</span>
+</h2>

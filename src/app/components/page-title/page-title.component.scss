@@ -1,0 +1,10 @@
+.page-title {
+  & button {
+    vertical-align: text-top;
+  }
+
+  & span.title {
+    text-transform: capitalize;
+    font-size: 30px;
+  }
+}
