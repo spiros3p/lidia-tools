@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { Utils } from 'src/app/services/utils';
 @Component({
   selector: 'app-my-apps-item',
   templateUrl: './my-apps-item.component.html',
@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class MyAppsItemComponent {
   @Input() app: any = {};
+  cleanUpPageTitle = Utils.cleanUpPageTitle;
 }
