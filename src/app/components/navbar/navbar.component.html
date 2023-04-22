@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
   <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="['']">Lidia's Tools</a>
+    <a class="navbar-brand" [routerLink]="['']">
+      <fa-icon class="fa-icon" [icon]="faChessQueen"></fa-icon>
+      Lidia's Tools
+    </a>
     <button
       class="navbar-toggler"
       type="button"
@@ -21,5 +24,8 @@
         </li>
       </ul>
     </div>
+    <a href="https://bitcoin.org/bitcoin.pdf">
+      <fa-icon class="fa-btc" [icon]="faBitcoinSign"></fa-icon>
+    </a>
   </div>
 </nav>
