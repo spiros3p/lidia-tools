@@ -29,8 +29,8 @@
                   *ngIf="savedMain"
                 ></fa-icon>
                 <div class="input-group-append">
-                  <!-- [disabled]="!requestedData.value.length" -->
                   <button
+                    [disabled]="!requestedData.value.length"
                     class="btn btn-outline-secondary"
                     type="button"
                     (click)="setMainColumnName()"
@@ -60,7 +60,6 @@
                   {{ columnSelections.value.secondaryColumn }}
                 </div>
                 <div class="input-group-append">
-                  <!-- [disabled]="!requestedData.value.length" -->
                   <button
                     class="btn btn-outline-secondary"
                     type="button"
