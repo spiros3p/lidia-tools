@@ -6,17 +6,87 @@
       </div>
       <hr />
       <div class="col-12">
-        <div class="mb-2">
-          <span class="me-5"><b>RESULTS</b></span>
-          <button
-            (click)="copyResults()"
-            [disabled]="!requestedData.value.length"
-            class="btn btn-primary"
-          >
-            COPY
-          </button>
-        </div>
+        <form [formGroup]="columnSelections">
+          <div class="row mb-2">
+            <div class="col-auto">
+              <div class="main-column-input input-group mb-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default"
+                    >Target column</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="mainColumn"
+                  formControlName="mainColumn"
+                  aria-describedby="inputGroup-sizing-default"
+                  placeholder="column"
+                />
+                <fa-icon
+                  class="fa-check"
+                  [icon]="faCheckCircle"
+                  *ngIf="savedMain"
+                ></fa-icon>
+                <div class="input-group-append">
+                  <!-- [disabled]="!requestedData.value.length" -->
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    (click)="setMainColumnName()"
+                  >
+                    <fa-icon [icon]="faPencil"></fa-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <div class="secondary-column-input input-group mb-2">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default"
+                    >Filter column</span
+                  >
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="secondaryColumn"
+                  formControlName="secondaryColumn"
+                  aria-describedby="inputGroup-sizing-default"
+                  placeholder="column"
+                />
+                <div class="cover" *ngIf="savedSecondary">
+                  {{ columnSelections.value.secondaryColumn }}
+                </div>
+                <div class="input-group-append">
+                  <!-- [disabled]="!requestedData.value.length" -->
+                  <button
+                    class="btn btn-outline-secondary"
+                    type="button"
+                    (click)="setSecondaryColumnName()"
+                    [disabled]="!requestedData.value.length"
+                  >
+                    <fa-icon *ngIf="!savedSecondary" [icon]="faPlus"></fa-icon>
+                    <fa-icon *ngIf="savedSecondary" [icon]="faTrashCan"></fa-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-auto">
+              <button
+                (click)="copyResults()"
+                [disabled]="!requestedData.value.length"
+                class="btn btn-primary mb-2"
+              >
+                COPY
+              </button>
+            </div>
+          </div>
+        </form>
         <div class="mb-3">
+          <span class="me-2"><b>RESULTS</b></span>
           <i> # of items: {{ requestedData.value.length || '-' }} </i>
         </div>
         <ul class="data-list">

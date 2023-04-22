@@ -25,3 +25,51 @@
   max-height: 500px;
   overflow: scroll;
 }
+
+.input-group {
+  &.main-column-input {
+    width: 210px;
+    position: relative;
+    & .fa-check {
+      position: absolute;
+      right: 50px;
+      top: 7px;
+      z-index: 99;
+    }
+    & input {
+      padding: 5px 21px 5px 12px;
+    }
+  }
+  &.secondary-column-input {
+    width: 210px;
+    position: relative;
+    & .cover {
+      position: absolute;
+      background-color: white;
+      text-align: center;
+      padding-top: 5px;
+      font-weight: bold;
+      left: 57px;
+      top: 1px;
+      width: 114px;
+      height: 35px;
+    }
+  }
+}
+
+.input-group-text {
+  max-width: 56px;
+  white-space: break-spaces;
+  font-size: 13px;
+  line-height: 14px;
+  padding: 4px 4px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group-append {
+  button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
