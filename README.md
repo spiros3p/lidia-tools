@@ -8,6 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - ngneat/Spectator
 - playwright e2e
 - ng-bootstrap
+- 
 
 ## Development server
 
