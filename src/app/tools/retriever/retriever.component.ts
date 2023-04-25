@@ -103,7 +103,11 @@ export class RetrieverComponent implements OnInit {
     let list = [];
     for (let item of data) {
       if (!!this.targetSecondaryColumn && !item[this.targetSecondaryColumn]) continue;
-      list.push(`${item[this.targetMainColumn]};`);
+      if (this.targetMainColumn.toLowerCase() === 'email') {
+        list.push(`${item[this.targetMainColumn]};`);
+      } else {
+        list.push(item[this.targetMainColumn]);
+      }
     }
     this.requestedData.next(list);
   }
