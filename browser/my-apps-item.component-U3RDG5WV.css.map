@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/my-apps-list/my-apps-item/my-apps-item.component.scss"],
+  "sourcesContent": ["a {\n  text-decoration: none;\n}\n\n.custom-card {\n  width: 100%;\n  min-height: 80px;\n  background-color: rgb(247, 251, 255);\n  padding: 12px;\n  color: black;\n\n  .card-title {\n    text-transform: capitalize;\n    font-size: 19px;\n  }\n\n  .card-text {\n    color: rgb(84, 84, 84);\n    font-size: 11px;\n    font-style: italic;\n  }\n}\n"],
+  "mappings": "AAAA,EACE,gBAAA,KAGF,CAAA,YACE,MAAA,KACA,WAAA,KACA,iBAAA,QAPF,QAQE,KACA,MAAA,KAEA,CAPF,YAOE,CAAA,WACE,eAAA,WACA,UAAA,KAGF,CAZF,YAYE,CAAA,UACE,MAAA,QACA,UAAA,KACA,WAAA",
+  "names": []
+}

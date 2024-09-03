@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/page-title/page-title.component.scss"],
+  "sourcesContent": [".page-title {\n  & button {\n    vertical-align: text-top;\n  }\n\n  & span.title {\n    text-transform: capitalize;\n    font-size: 30px;\n  }\n}\n"],
+  "mappings": "AACE,CAAA,WAAA,OACE,eAAA,SAGF,CAJA,WAIA,IAAA,CAAA,MACE,eAAA,WACA,UAAA",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/navbar/navbar.component.scss"],
+  "sourcesContent": [".navbar-brand {\n  & .fa-icon {\n    font-size: 18px;\n    vertical-align: text-bottom;\n  }\n}\n\n.fa-btc {\n  font-size: 26px;\n  text-decoration: none;\n  color: orange;\n}\n\n.social-link{\n  padding: 2px 10px;\n}"],
+  "mappings": "AACE,CAAA,aAAA,CAAA,QACE,UAAA,KACA,eAAA,YAIJ,CAAA,OACE,UAAA,KACA,gBAAA,KACA,MAAA,OAGF,CAAA,YAZE,QAaA,IAAA",
+  "names": []
+}
