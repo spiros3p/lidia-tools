@@ -11,10 +11,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Use Node.js v18
+    - name: Use Node.js v20
       uses: actions/setup-node@v3
       with:
-        node-version: 18
+        node-version: 20
 
     - name: Install Dependencies
       run: npm install
@@ -24,7 +24,7 @@ jobs:
 
     - name: Deploy to gh pages
       run: |
-        npx angular-cli-ghpages@1.0.6 --dir=docs --name="Spiros" --email=spiros3p@gmail.com --no-silent
+        npx angular-cli-ghpages@2.0.1 --dir=docs --name="Spiros" --email=spiros3p@gmail.com --no-silent
       env:
         CI: true
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
