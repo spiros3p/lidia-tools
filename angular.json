@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "lidias-tools:build:production"
+              "buildTarget": "lidias-tools:build:production"
             },
             "development": {
-              "browserTarget": "lidias-tools:build:development"
+              "buildTarget": "lidias-tools:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lidias-tools:build"
+            "buildTarget": "lidias-tools:build"
           }
         },
         "lint": {
